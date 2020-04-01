@@ -9,10 +9,11 @@
     <%= javascript_pack_tag 'application' %>
   </head>
 
-  <body>
-    <div>
-      <div>
-        <div>
+  <body class="container">
+    <div class="row">
+      <div class="col-12">
+        <%= render partial: 'shared/navigation_bar' %>
+        <div class="my-3">
           <%= yield %>
         </div>
       </div>
